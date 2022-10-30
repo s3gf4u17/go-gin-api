@@ -12,3 +12,7 @@ use haskell in terminal:
 echo ":set prompt \"ghci> \"" > ~/.ghci
 ghci
 ```
+compile haskell program:
+```
+ghc -o example example.hs
+```
