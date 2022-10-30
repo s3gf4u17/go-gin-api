@@ -6,4 +6,6 @@ to start using haskell:
 
 ```
 apt-get install haskell-platform -y
+echo ":set prompt \"ghci> \"" > ~/.ghci
+ghci
 ```
