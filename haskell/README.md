@@ -6,10 +6,10 @@ install haskell:
 ```
 apt-get install haskell-platform -y
 haskell-compiler --version
+echo ":set prompt \"ghci> \"" > ~/.ghci
 ```
 use haskell in terminal:
 ```
-echo ":set prompt \"ghci> \"" > ~/.ghci
 ghci
 ```
 compile haskell program:
