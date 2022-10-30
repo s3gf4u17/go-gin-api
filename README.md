@@ -1,1 +1,1 @@
-https://img.shields.io/github/languages/count/szkolakowski/my-coding?color=red&style=for-the-badge
+![Languages](https://img.shields.io/github/languages/count/szkolakowski/my-coding?color=red&style=for-the-badge)
