@@ -16,3 +16,7 @@ compile haskell program:
 ```
 ghc -o example example.hs
 ```
+remove haskell:
+```
+apt-get remove haskell-platform -y
+```
