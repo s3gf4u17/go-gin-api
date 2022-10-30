@@ -2,10 +2,13 @@ big thanks to Philipp Hagenlocher as all this knowledge comes from his yt channe
 
 https://www.youtube.com/channel/UC3xdLFFsqG701QAyGJIPT1g
 
-to start using haskell:
-
+install haskell:
 ```
 apt-get install haskell-platform -y
+haskell-compiler --version
+```
+use haskell in terminal:
+```
 echo ":set prompt \"ghci> \"" > ~/.ghci
 ghci
 ```
