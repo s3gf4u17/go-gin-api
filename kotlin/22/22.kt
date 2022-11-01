@@ -5,10 +5,10 @@ fun main(){
 
 fun printUserInfo(id:Int,name:String,surname:String,age:Int,mustache:Boolean){
     val userInfo = """
-    | user id: $id      |
-    | name: $name       |
-    | surname: ${surname.substring(0,6)} |
-    | mustache: $mustache |
+    user id: $id
+    name: $name
+    surname: $surname
+    mustache: $mustache
     """.trimIndent()
     println(userInfo)
 }
