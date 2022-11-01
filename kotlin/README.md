@@ -10,3 +10,7 @@ run kotlin application:
 ```
 java -jar hello.jar
 ```
+use makefile:
+```
+make run id={folder id}
+```
