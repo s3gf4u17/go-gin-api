@@ -3,4 +3,4 @@
 
 ![Haskell](https://img.shields.io/badge/Haskell-5e5086?style=flat-square&logo=haskell&logoColor=white)
 ![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=flat-square&logo=kotlin&logoColor=white)
-![Makefile](https://img.shields.io/badge/makefile-%237F52FF.svg?style=flat-square)
+![Makefile](https://img.shields.io/badge/makefile-%234ea94b.svg?style=flat-square)
