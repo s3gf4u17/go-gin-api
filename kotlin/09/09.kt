@@ -1,6 +1,6 @@
 // IF / ELSE
 fun main() {
-    var calories = 1900
+    var calories = 1800
     if (calories>=2000){
         println("You cant consume any more calories today!")
     }else{
