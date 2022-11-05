@@ -1,11 +1,9 @@
 run:
 	@clear
-	gcc ${id}/${id}.c -o out -lm
-	@clear
+	@gcc ${id}/${id}.c -o out -lm
 	@./out
-	@echo
 	@rm -rf out
 
 create:
-	@mkdir ${id}
-	@touch ${id}/${id}.c
+	mkdir ${id}
+	touch ${id}/${id}.c
