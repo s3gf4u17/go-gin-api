@@ -1,6 +1,6 @@
 // variable modifiers - auto && extern
 #include<stdio.h>
-#include"other.c"
+#include"variable.c"
 
 int outer = 0;
 
