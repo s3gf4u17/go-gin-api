@@ -1,6 +1,7 @@
-// variable modifiers - auto && extern
+// variable modifiers - auto && extern && register && static
 #include<stdio.h>
 #include"variable.c"
+#include"increment.c"
 
 int outer = 0;
 
@@ -17,10 +18,20 @@ int main(){
 	// int var declares variable and allocates memory for it (definition)
 	// extern int var only declares variable to the compiler
 	// used when you need to access a variable from a different file
-	printf("%d",var);
+	// printf("%d",var);
 
-	extern int outer;
-	printf("%d",outer);
+	// extern int outer;
+	// printf("%d",outer);
+
+	// register dataType variable
+	// it hints the compiler to store the variable in a register memory
+	// this reduces access time greatly
+
+	int value;
+	value = incr();
+	value = incr();
+	value = incr();
+	printf("%i",value);
 
 	return 0;
 }
