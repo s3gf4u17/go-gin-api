@@ -1,5 +1,11 @@
 run .r files with:
 
 ```
-R < test.r --no-save
+R < filename.r --no-save
+```
+
+or
+
+```
+Rscript filename.r
 ```
