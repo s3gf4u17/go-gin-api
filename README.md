@@ -1,3 +1,5 @@
+<h3>Repo Stats</h3>
+
 ![SIZE](https://img.shields.io/github/languages/code-size/szkolakowski/my-coding?color=gray&style=flat-square)
 
 <h3>Algorithms</h3>
