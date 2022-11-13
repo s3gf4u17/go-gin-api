@@ -11,6 +11,8 @@ ls()
 rm(y)
 ls()
 
+y <- 9
+
 # variable names can contain special characters
 # variable name cant begin with a number!
 x.1 <- 17
@@ -20,3 +22,21 @@ xx <- "marin"
 xx # works like print
 yy <- "1"
 yy
+
+11+14
+x
+x+2
+y
+z <- x+y
+z
+
+y^2
+sqrt(y)
+log(y)
+exp(y)
+log2(y)
+abs(-15)
+
+# we can complete commands in different lines
+sqrt(81
+)
