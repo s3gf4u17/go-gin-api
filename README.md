@@ -1,8 +1,7 @@
 ![EASY](https://img.shields.io/static/v1?label=easy&message=13&color=green&style=flat-square)
 ![MEDM](https://img.shields.io/static/v1?label=medium&message=1&color=yellow&style=flat-square)
 ![HARD](https://img.shields.io/static/v1?label=hard&message=0&color=orange&style=flat-square)
-![SIZE](https://img.shields.io/github/languages/code-size/szkolakowski/my-leetcode?color=gray&style=flat-square)
-![LANG](https://img.shields.io/static/v1?label=language&message=C&color=gray&style=flat-square)
+![SIZE](https://img.shields.io/github/languages/code-size/szkolakowski/my-coding?color=gray&style=flat-square)
 
 <h1>List of all problems solved</h1>
 
