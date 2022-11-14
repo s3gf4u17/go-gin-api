@@ -9,5 +9,12 @@ int main() {
     std::cout << "a = " << a << std::endl;
     // printf from c also works here
     printf("a = %i\n",a);
+
+    // cout is an instance of an ostream
+    std::cout << "set a = ";
+    // cin is an instance of an istream
+    std::cin >> a;
+    printf("a = %i\n",a);
+
     return 0;
 }
