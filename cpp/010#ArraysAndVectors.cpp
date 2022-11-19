@@ -38,4 +38,12 @@ int main(){
     print_arraySTL(monthsArrSTL,12);
 
     vector<int> monthsVecCopy = monthsVec;
+
+    for(int i = 0;i<monthsVecCopy.size();i++) cout << monthsVecCopy[i] <<  "\t";
+    cout << "\n";
+
+    for(int n : monthsVecCopy) cout << n << "\t";
+    cout << "\n";
+    
+    return 0;
 }
