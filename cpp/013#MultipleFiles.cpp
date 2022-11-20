@@ -9,13 +9,36 @@
 using std::cout;
 
 int main(){
-    cout << area(1.0) << "\n";
-    cout << area(2.0,3.0) << "\n";
-    cout << exp(2,3) << "\n";
-    cout << exp(2,0) << "\n";
-    cout << exp(2,-1) << "\n";
+    cout << add(5,7) << "\n";
+    cout << subtract(8,3) << "\n";
+    cout << divide(7,1) << "\n";
+    cout << multiply(3,4) << "\n";
+
+    int a = 1;
+    int b = -1;
+    swap(a,b);
+    cout << a << " " << b << "\n";
     return 0;
 }
 
 // this program can be compiled with following command:
 // g++ 013#MultipleFiles.cpp 013#MathStuff.cpp
+// or
+// g++ -c 013#MultipleFiles.cpp 013#MathStuff.cpp
+// g++ multiplefiles.o mathstuff.o
+// or with makefile
+
+// script1.o: script1.cpp
+// g++ -c script1.cpp
+
+// script2.o: script2.cpp
+// g++ -c script2.cpp
+
+// compile: script1.o script2.o
+// g++ script1.o script2.o
+
+// clean:
+// rm -rf *.o ./a.out
+
+// makefile checks if req on the right is newer than the file
+// if yes, it recompiles only changed files

@@ -1,10 +1,14 @@
 #ifndef MATH_STUFF
 #define MATH_STUFF
 
-double area(double a);
+int add(int a, int b);
 
-double area(double a, double b);
+int subtract(int a, int b);
 
-int exp(int a = 0, int x = 0);
+int divide(int a, int b);
+
+int multiply(int a, int b);
+
+void swap(int &a, int&b);
 
 #endif
