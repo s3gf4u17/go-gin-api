@@ -5,7 +5,7 @@ using std::string;
 
 struct User{
     private:
-        int test_score;
+        int test_score = 0;
     public:
         string name;
         string surname;
