@@ -9,14 +9,14 @@
 using std::cout;
 
 int main(){
-    cout << add(5,7) << "\n";
-    cout << subtract(8,3) << "\n";
-    cout << divide(7,1) << "\n";
-    cout << multiply(3,4) << "\n";
+    cout << maths::add(5,7) << "\n";
+    cout << maths::subtract(8,3) << "\n";
+    cout << maths::divide(7,1) << "\n";
+    cout << maths::multiply(3,4) << "\n";
 
     int a = 1;
     int b = -1;
-    swap(a,b);
+    maths::swap(a,b);
     cout << a << " " << b << "\n";
     return 0;
 }
