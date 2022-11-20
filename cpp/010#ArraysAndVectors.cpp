@@ -44,6 +44,28 @@ int main(){
 
     for(int n : monthsVecCopy) cout << n << "\t";
     cout << "\n";
+
+    // multidimensional arrays and nested vectors
+    int multiDimArr[3][3] = {{1,2,3},{4,5,6},{7,8,9}};
+
+    cout << "\n";
+    // i - rows; j - columns
+    for (int i =0;i<3;i++){
+        for (int j = 0;j<3;j++){
+            cout << multiDimArr[i][j] << "\t";
+        }
+        cout << "\n";
+    }
+
+    cout << "\n";
+    vector<vector<int>> nestedVec = {{1,4,7},{2,5,8},{3,6,9}};
+
+     for (int i =0;i<3;i++){
+        for (int j = 0;j<3;j++){
+            cout << nestedVec[i][j] << "\t";
+        }
+        cout << "\n";
+    }
     
     return 0;
 }
