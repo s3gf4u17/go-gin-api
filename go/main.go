@@ -26,6 +26,15 @@ func main() {
 	fmt.Printf("%T %T\n", v4, v5)
 	fmt.Println(v1, v2, v3, v4, v5, v6)
 
+	// FMT MODULE
+	// fmt.Printf("Hello %T %v", 10, 10)
+	// var x string = fmt.Sprintf("Hello %T %v", 10, 10)
+	// v - value
+	// T - type
+	// %% - %
+	// t - bool
+	// b o d x - integer bases (2, 8, 10, 16)
+
 	// strings
 	// var nameOne string = "bob"
 	// var nameTwo = "Bobbinson"
