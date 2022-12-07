@@ -10,7 +10,6 @@ func main() {
 	var v1 string = "Hello"
 	var v2 string
 	v2 = "World"
-	fmt.Println(v1, v2)
 	// available types:
 	// uint8, uint16, uint32, uint64
 	// int8, int16, int32(rune), int64
@@ -18,6 +17,11 @@ func main() {
 	// float32, float64 - floating point numbers
 	// complex64, complex128 - imaginary numbers
 	// string, bool
+
+	// IMPLICIT VS EXPLICIT
+	var v3 uint16 = 260 // explicit
+	var v4 = 261        // implicit (go guesses the type)
+	fmt.Println(v1, v2, v3, v4)
 
 	// strings
 	// var nameOne string = "bob"
