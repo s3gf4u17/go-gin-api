@@ -21,7 +21,10 @@ func main() {
 	// IMPLICIT VS EXPLICIT
 	var v3 uint16 = 260 // explicit
 	var v4 = 261        // implicit (go guesses the type)
-	fmt.Println(v1, v2, v3, v4)
+	v5 := 262           // walrus operator
+	var v6 bool         // check bool default value
+	fmt.Printf("%T %T\n", v4, v5)
+	fmt.Println(v1, v2, v3, v4, v5, v6)
 
 	// strings
 	// var nameOne string = "bob"
