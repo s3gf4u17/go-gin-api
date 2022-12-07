@@ -34,6 +34,17 @@ func main() {
 	// %% - %
 	// t - bool
 	// b o d x - integer bases (2, 8, 10, 16)
+	// e f g - float (scientific, decimal no exponent, large exponents)
+	// WIDTH AND PRECISION
+	// s q - strings (string, double quoted string)
+	// f - default width default precision
+	// 9f - 9 width default precision
+	// .2f - default width 2 precision
+	// 9.2f - 9 width 2 precision
+	// 9.f - 9 width 0 precision
+	// PADDING
+	// 09d pads digit to length 9 with preceeding 0s
+	// -4d pads with spaces, width 4, left justified
 
 	// strings
 	// var nameOne string = "bob"
