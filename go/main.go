@@ -8,7 +8,16 @@ func main() {
 
 	// VARIABLES && DATA TYPES
 	var v1 string = "Hello"
-	fmt.Println(v1)
+	var v2 string
+	v2 = "World"
+	fmt.Println(v1, v2)
+	// available types:
+	// uint8, uint16, uint32, uint64
+	// int8, int16, int32(rune), int64
+	// uint, int, uintptr - machine dependent
+	// float32, float64 - floating point numbers
+	// complex64, complex128 - imaginary numbers
+	// string, bool
 
 	// strings
 	// var nameOne string = "bob"
