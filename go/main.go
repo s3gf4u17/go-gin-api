@@ -1,6 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strconv"
+)
 
 func main() {
 	// HELLO WORLD
@@ -23,8 +28,6 @@ func main() {
 	var v4 = 261        // implicit (go guesses the type)
 	v5 := 262           // walrus operator
 	var v6 bool         // check bool default value
-	fmt.Printf("%T %T\n", v4, v5)
-	fmt.Println(v1, v2, v3, v4, v5, v6)
 
 	// FMT MODULE
 	// fmt.Printf("Hello %T %v", 10, 10)
@@ -45,6 +48,19 @@ func main() {
 	// PADDING
 	// 09d pads digit to length 9 with preceeding 0s
 	// -4d pads with spaces, width 4, left justified
+
+	// CONSOLE INPUT
+	v7 := bufio.NewScanner(os.Stdin)
+	// fmt.Printf("type something: ")
+	// v7.Scan()
+
+	// TYPE CONVERSION
+	v8 := bufio.NewScanner(os.Stdin)
+	// v8.Scan()
+	v9, _ := strconv.ParseInt(v8.Text(), 10, 64) // size 10, size 64
+
+	fmt.Printf("%T %T %q %T %d\n", v4, v5, v7.Text(), v9, v9)
+	fmt.Println(v1, v2, v3, v4, v5, v6)
 
 	// strings
 	// var nameOne string = "bob"
