@@ -101,6 +101,25 @@ func main() {
 		break
 	}
 
+	// SWITCH
+	switch v13 {
+	case 8, 7:
+		v13++
+	case 9:
+		v13--
+	default:
+		v13 *= 3
+	}
+
+	switch {
+	case v13 == 8:
+		v13++
+	case v13 == 9:
+		v13--
+	default:
+		v13 *= 3
+	}
+
 	fmt.Printf("%T %T %q %T %d\n", v4, v5, v7.Text(), v9, v9)
 	fmt.Println(v1, v2, v3, v4, v5, v6, v10, v11, math.Pi, v12, v13)
 }
