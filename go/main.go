@@ -143,8 +143,34 @@ func main() {
 		fmt.Println(element)
 	}
 
+	// MAPS
+	// maps do not keep order of the elements inside !!!
+	var v22 map[int]string = map[int]string{
+		1: "test1",
+		2: "test2",
+	}
+
+	v23 := map[int]string{
+		1: "test1",
+		2: "test2",
+	}
+
+	v24 := make(map[int]string) // creates an empty map
+
+	v23[1] = "changedValue"
+	v24[2] = "newValue"
+	delete(v23, 2)
+
+	// len(map) - will show how many elements are stored in a map
+
+	v25, ok1 := v24[2]
+	v26, ok2 := v24[33]
+	// if key 2 exists, store value in val
+	//if not - make val the default value for a stored type
+
 	fmt.Printf("%T %T %q %T %d %T %T\n", v4, v5, v7.Text(), v9, v9, v14, v20)
 	fmt.Println(v1, v2, v3, v4, v5, v6, v10, v11, math.Pi, v12, v13)
 	fmt.Println(v14, v14[0], v15, len(v15), v16, v17, v18, len(v18), cap(v18), v18[:cap(v18)])
 	fmt.Println(v19, v20, v21)
+	fmt.Println(v22, v23, v24, v25, ok1, v26, ok2)
 }
