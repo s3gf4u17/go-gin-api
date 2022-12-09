@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"math"
 	"os"
 	"strconv"
 )
@@ -59,36 +60,15 @@ func main() {
 	// v8.Scan()
 	v9, _ := strconv.ParseInt(v8.Text(), 10, 64) // size 10, size 64
 
+	// ARITHMETIC OPERATORS
+	// +, -, /, *, %
+	v10 := 10 + 12
+	// types need to be the same
+	// we cant add int8 to int 32 etc
+	v11 := float64(v10) / 8.0
+
+	// CONDITIONS
+
 	fmt.Printf("%T %T %q %T %d\n", v4, v5, v7.Text(), v9, v9)
-	fmt.Println(v1, v2, v3, v4, v5, v6)
-
-	// strings
-	// var nameOne string = "bob"
-	// var nameTwo = "Bobbinson"
-	// var nameThree string
-	// fmt.Println(nameOne, nameTwo, nameThree)
-	// nameThree = nameOne
-	// nameOne = "rob"
-	// fmt.Println(nameOne, nameTwo, nameThree)
-	// nameFour := "mob" // cannot be used outside a function
-	// fmt.Println(nameFour)
-
-	// // ints
-	// var age1 int = 20
-	// var age2 = 30
-	// var age3 int
-	// age4 := 40
-	// fmt.Println(age1, age2, age3, age4)
-
-	// // bits and memory
-	// var num1 int8 = 25 // num16, num32, num64 also exist
-	// fmt.Println(num1)
-	// var num2 uint8 = 25 // unsigned
-	// fmt.Println(num2)
-
-	// // floats
-	// var score1 float32 = 1.0 // float32, float64
-	// fmt.Println(score1)
-	// score2 := 1.5 // default -> float64
-	// fmt.Println(score2)
+	fmt.Println(v1, v2, v3, v4, v5, v6, v10, v11, math.Pi)
 }
