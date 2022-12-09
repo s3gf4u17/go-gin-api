@@ -84,8 +84,23 @@ func main() {
 		}
 	}
 
+	v13 := 0
 	// LOOPS
+	for v13 < 3 {
+		v13++
+	}
+
+	for x := 0; x < 5; x++ {
+		v13++
+	}
+
+	for {
+		if v13 == 0 {
+			continue
+		}
+		break
+	}
 
 	fmt.Printf("%T %T %q %T %d\n", v4, v5, v7.Text(), v9, v9)
-	fmt.Println(v1, v2, v3, v4, v5, v6, v10, v11, math.Pi, v12)
+	fmt.Println(v1, v2, v3, v4, v5, v6, v10, v11, math.Pi, v12, v13)
 }
