@@ -136,8 +136,15 @@ func main() {
 	v19 = append(v19, 9) // appending creates a new slice
 	v20 := make([]int, 5)
 
+	// RANGE
+	var v21 []int = []int{534, 4, 234, 3}
+	// _ stands for anonymous variable, allows us to ignore index
+	for _, element := range v21 { // range creates an iterator
+		fmt.Println(element)
+	}
+
 	fmt.Printf("%T %T %q %T %d %T %T\n", v4, v5, v7.Text(), v9, v9, v14, v20)
 	fmt.Println(v1, v2, v3, v4, v5, v6, v10, v11, math.Pi, v12, v13)
 	fmt.Println(v14, v14[0], v15, len(v15), v16, v17, v18, len(v18), cap(v18), v18[:cap(v18)])
-	fmt.Println(v19, v20)
+	fmt.Println(v19, v20, v21)
 }
