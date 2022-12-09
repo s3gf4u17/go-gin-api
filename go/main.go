@@ -75,6 +75,16 @@ func main() {
 	// || or, && and
 
 	// CONDITIONAL STATEMENTS
+	if v12 {
+		v12 = false
+		if v12 {
+			v12 = false
+		} else {
+			v12 = true
+		}
+	}
+
+	// LOOPS
 
 	fmt.Printf("%T %T %q %T %d\n", v4, v5, v7.Text(), v9, v9)
 	fmt.Println(v1, v2, v3, v4, v5, v6, v10, v11, math.Pi, v12)
