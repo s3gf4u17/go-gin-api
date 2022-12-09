@@ -120,6 +120,17 @@ func main() {
 		v13 *= 3
 	}
 
-	fmt.Printf("%T %T %q %T %d\n", v4, v5, v7.Text(), v9, v9)
+	// ARRAYS
+	var v14 [3]int
+	v14[0] = -1
+	v15 := [3]int{1, 2, 3}
+	v16 := 0
+	v17 := [3][2]int{{1, 2}, {3, 4}, {5, 6}}
+	for i := 0; i < len(v15); i++ {
+		v16 += v15[i]
+	}
+
+	fmt.Printf("%T %T %q %T %d %T\n", v4, v5, v7.Text(), v9, v9, v14)
 	fmt.Println(v1, v2, v3, v4, v5, v6, v10, v11, math.Pi, v12, v13)
+	fmt.Println(v14, v14[0], v15, len(v15), v16, v17)
 }
