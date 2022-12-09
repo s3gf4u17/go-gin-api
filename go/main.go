@@ -71,6 +71,11 @@ func main() {
 	// >, >=, <, <=, ==, !=
 	v12 := v10 > 10
 
+	// CHAINED CONDITIONALS
+	// || or, && and
+
+	// CONDITIONAL STATEMENTS
+
 	fmt.Printf("%T %T %q %T %d\n", v4, v5, v7.Text(), v9, v9)
 	fmt.Println(v1, v2, v3, v4, v5, v6, v10, v11, math.Pi, v12)
 }
