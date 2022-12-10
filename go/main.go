@@ -8,6 +8,34 @@ import (
 	"strconv"
 )
 
+func abs_val(x int) int {
+	if x < 0 {
+		x = -x
+	}
+	return x
+}
+
+func add(x, y int) int {
+	return x + y
+}
+
+func minmax(x, y int) (int, int) {
+	if x > y {
+		return y, x
+	} else {
+		return x, y
+	}
+}
+
+// returns z and zz values hardcoded in the function body
+func get_zzz() (z int, zz int) {
+	defer fmt.Println("Hello return") // defer will wait with execution till it hits return keyword
+	z = 1
+	zz = 2
+	fmt.Println("Hello ret... defer(?)")
+	return
+}
+
 func main() {
 	// HELLO WORLD
 	// fmt.Println("Hello World!")
@@ -168,9 +196,16 @@ func main() {
 	// if key 2 exists, store value in val
 	//if not - make val the default value for a stored type
 
+	// FUNCTIONS
+	v27 := abs_val(10)
+	v28 := abs_val(-5)
+	v29 := add(1, 2)
+	v30, v31 := minmax(100, 20) // v30 <- min, v31 <- max
+	v32, v33 := get_zzz()
+
 	fmt.Printf("%T %T %q %T %d %T %T\n", v4, v5, v7.Text(), v9, v9, v14, v20)
 	fmt.Println(v1, v2, v3, v4, v5, v6, v10, v11, math.Pi, v12, v13)
 	fmt.Println(v14, v14[0], v15, len(v15), v16, v17, v18, len(v18), cap(v18), v18[:cap(v18)])
-	fmt.Println(v19, v20, v21)
 	fmt.Println(v22, v23, v24, v25, ok1, v26, ok2)
+	fmt.Println(v19, v20, v21, v27, v28, v29, v30, v31, v32, v33)
 }
