@@ -36,6 +36,10 @@ func get_zzz() (z int, zz int) {
 	return
 }
 
+func test() {
+	fmt.Println("test function called")
+}
+
 func main() {
 	// HELLO WORLD
 	// fmt.Println("Hello World!")
@@ -208,4 +212,36 @@ func main() {
 	fmt.Println(v14, v14[0], v15, len(v15), v16, v17, v18, len(v18), cap(v18), v18[:cap(v18)])
 	fmt.Println(v22, v23, v24, v25, ok1, v26, ok2)
 	fmt.Println(v19, v20, v21, v27, v28, v29, v30, v31, v32, v33)
+
+	// ADVANCED FUNCTIONS AND FUNCTION CLOSURES
+	x := test // we can assign any function to a variable
+	x()
+	fmt.Printf("%T\n", x)
+	// we can also define function in a js way
+	y := func(x int) int {
+		return x * -1
+	}(8) // and even call in definition
+	fmt.Println(y)
+	test2(x)
+	z := func(a int) int {
+		return a
+	}
+	test3(z)
+	returnFunc("name")()
+}
+
+// we can pass functions as arguments
+func test2(x func()) {
+	x()
+}
+
+func test3(z func(int) int) {
+	fmt.Println((1))
+}
+
+func returnFunc(x string) func() {
+	// function closure - uses a value defined outside (here x from returnFunc)
+	return func() {
+		fmt.Println("returned:", x)
+	}
 }
