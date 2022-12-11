@@ -47,7 +47,7 @@ func main() {
 	// curl localhost:8080/books
 
 	router.POST("/books",createBook)
-	//
+	// curl -X POST localhost:8080/books -H "Content-Type: application/json" -d @body.json
 
 	// start api on localhost port 8080
 	router.Run("localhost:8080")
