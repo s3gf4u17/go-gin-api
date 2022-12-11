@@ -32,7 +32,10 @@ func getBooks(c *gin.Context) {
 func getBook(c *gin.Context) {
 	id := c.Param("id") // path parameter
 	book, err := getBookById(id)
-	if err != nil {return}
+	if err != nil {
+		c.IndentedJSON(http.StatusNotFound,gin.H{"message":"Book not found."})
+		return
+	}
 	c.IndentedJSON(http.StatusOK,book)
 }
 
@@ -40,7 +43,7 @@ func createBook(c *gin.Context) {
 	var newBook book
 	// check if there is any error
 	if err := c.BindJSON(&newBook); err!= nil {
-		return // automatically creates error response
+		return // BindJSON automatically creates error response
 	}
 	books = append(books,newBook)
 	c.IndentedJSON(http.StatusCreated,newBook)
