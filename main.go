@@ -5,7 +5,7 @@ package main
 
 import "net/http"
 import "github.com/gin-gonic/gin"
-// import "errors"
+import "errors"
 
 // struct to store book data
 // capital case make variables available publicly for other modules
@@ -29,6 +29,13 @@ func getBooks(c *gin.Context) {
 	c.IndentedJSON(http.StatusOK, books)
 }
 
+func getBook(c *gin.Context) {
+	id := c.Param("id") // path parameter
+	book, err := getBookById(id)
+	if err != nil {return}
+	c.IndentedJSON(http.StatusOK,book)
+}
+
 func createBook(c *gin.Context) {
 	var newBook book
 	// check if there is any error
@@ -37,6 +44,16 @@ func createBook(c *gin.Context) {
 	}
 	books = append(books,newBook)
 	c.IndentedJSON(http.StatusCreated,newBook)
+}
+
+// error handling
+func getBookById(id string) (*book, error) {
+	for i, b := range books {
+		if b.ID == id {
+			return &books[i], nil
+		}
+	}
+	return nil, errors.New("book not found")
 }
 
 func main() {
@@ -48,6 +65,9 @@ func main() {
 
 	router.POST("/books",createBook)
 	// curl -X POST localhost:8080/books -H "Content-Type: application/json" -d @body.json
+
+	router.GET("/books/:id",getBook)
+	// curl -X GET localhost:8080/books/2
 
 	// start api on localhost port 8080
 	router.Run("localhost:8080")
