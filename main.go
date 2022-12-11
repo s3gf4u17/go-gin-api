@@ -35,4 +35,6 @@ func main() {
 	router.GET("/books",getBooks)
 	// start api on localhost port 8080
 	router.Run("localhost:8080")
+	// test with
+	// curl localhost:8080/books
 }
