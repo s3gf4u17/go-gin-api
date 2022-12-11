@@ -228,6 +228,25 @@ func main() {
 	}
 	test3(z)
 	returnFunc("name")()
+
+	// MUTABLE AND IMMUTABLE DATA TYPES
+	var a1 int = 5 // (immutable)
+	a2 := a1       // assign value of a1 to variable a2
+	a2 = 10
+	fmt.Println(a1, a2)
+	var a3 []int = []int{1, 2, 3} // (mutable) (slice)
+	a4 := a3                      // assigns a3 and a4 to the same slice in memory
+	a4[0] = 4                     // changing a4 changes a3 as well, that means that slices are just memory addresses
+	fmt.Println(a3, a4)
+	var a5 [2]int = [2]int{1, 2} // simple array with fixed length (also mutable)
+	a6 := a5
+	a6[0] = 3
+	fmt.Println(a5, a6) // by this behavior we see that line a6 := a5 simply creates new copy of this array
+	// a5 contains array in itself while a3 is only an address
+	var a7 []int = []int{1, 2, 3}
+	fmt.Println(a7)
+	changeFirst(a7, 4)
+	fmt.Println(a7)
 }
 
 // we can pass functions as arguments
@@ -244,4 +263,8 @@ func returnFunc(x string) func() {
 	return func() {
 		fmt.Println("returned:", x)
 	}
+}
+
+func changeFirst(slice []int, a int) {
+	slice[0] = a
 }
