@@ -30,5 +30,5 @@ func main() {
 	structs.ChangeX(&p4,999)
 	fmt.Println(p4.X, p4.Y)
 	c1 := structs.Circle{10,&structs.Point{0,0}}
-	fmt.Println(c1, c1.Center.X)
+	fmt.Println(c1, c1.Center.X,c1.GetArea())
 }
