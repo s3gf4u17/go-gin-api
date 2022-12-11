@@ -20,8 +20,8 @@ type book struct{
 // test list of books
 var books = []book{
 	{ID:"1",Title:"In search of Lost Time",Author:"Marcel Proust",Quantity:17},
-	{ID:"1",Title:"In search of Lost Time",Author:"Marcel Proust",Quantity:17},
-	{ID:"1",Title:"In search of Lost Time",Author:"Marcel Proust",Quantity:17}
+	{ID:"2",Title:"The Great Gatsby",Author:"F. Scott Fitzgerald",Quantity:5},
+	{ID:"3",Title:"War and Peace",Author:"Leo Tolstoy",Quantity:2}
 }
 
 func main() {
