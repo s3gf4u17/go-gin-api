@@ -18,5 +18,5 @@ func main() {
 }
 
 func serveHTML(w http.ResponseWriter, r *http.Request) {
-	http.ServeFile(w,r,*varPath+"/index.html")
+	w.Write([]byte("<h1>Gost requires some setup</h1><a href='https://github.com/s3gf4u17/gost/blob/master/README.md'>Learn more</a>"))
 }
