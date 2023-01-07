@@ -1,1 +1,1 @@
-<h2 align="center">Gost</h2>
+<h2 align="center">Gost - go static</h2>
