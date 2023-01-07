@@ -41,4 +41,4 @@ todo
 
 ## Legal notice
 
-Gost is a free software. By using gost you agree to sharing contents of your disk via internet. Authors do not take responsibility for badly configured program.
+Gost is a free software. By using Gost you agree to sharing contents of your disk via internet. Authors do not take responsibility for harm caused by badly configured program.
