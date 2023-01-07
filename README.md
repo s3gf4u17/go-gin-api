@@ -41,4 +41,4 @@ todo
 
 ## Legal notice
 
-todo
+Gost is a free software. By using gost you agree to sharing contents of your disk via internet. Authors do not take responsibility for badly configured program.
