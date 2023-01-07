@@ -29,3 +29,7 @@ First build binary from source code or download prebuilt version from **Releases
 Now you can use Gost anywhere as a system command, with a simple command:
 
     gost -host=<host> -port=<port> -path=<path>
+
+## Run on Windows
+
+todo
