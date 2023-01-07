@@ -11,6 +11,10 @@ Cross-platform static web server for web development.
 
 ## Build from source code
 
+To build the project, you first need a golang compiler.
+
 Gost does not require any external libraries. You can build it with basic command:
 
     go build -x -o gost
+
+## Run on Debian
