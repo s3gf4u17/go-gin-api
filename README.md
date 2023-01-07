@@ -9,7 +9,7 @@ Cross-platform static web server for web development.
 ![Debian](https://img.shields.io/badge/Debian-D70A53?style=flat&logo=debian&logoColor=white)
 ![Windows](https://img.shields.io/badge/Windows-0078D6?style=flat&logo=windows&logoColor=white)
 
-### Build from source code
+## Build from source code
 
 Gost does not require any external libraries. You can build it with basic command:
 
