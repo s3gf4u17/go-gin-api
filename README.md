@@ -36,7 +36,7 @@ todo
 
 ## Release notes
 
-todo
+- **version 0.0.0**
 
 ## Legal notice
 
