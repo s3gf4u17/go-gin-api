@@ -37,7 +37,7 @@ todo
 ## Release notes
 
 - **version 0.0.0**
-serve html pages stored in html folder
+    - serve html pages stored in html folder
 
 ## Legal notice
 
