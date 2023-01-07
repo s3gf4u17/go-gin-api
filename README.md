@@ -8,3 +8,9 @@ Cross-platform static web server for web development.
 ![Downloads](https://img.shields.io/github/downloads/s3gf4u17/gost/total)
 ![Debian](https://img.shields.io/badge/Debian-D70A53?style=flat&logo=debian&logoColor=white)
 ![Windows](https://img.shields.io/badge/Windows-0078D6?style=flat&logo=windows&logoColor=white)
+
+### Build from source code
+
+Gost does not require any external libraries. You can build it with basic command:
+
+    go build -x -o gost
