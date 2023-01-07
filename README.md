@@ -4,3 +4,5 @@
 ![Size](https://img.shields.io/github/languages/code-size/s3gf4u17/gost)
 ![Files](https://img.shields.io/github/directory-file-count/s3gf4u17/gost)
 ![Downloads](https://img.shields.io/github/downloads/s3gf4u17/gost/total)
+![Debian](https://img.shields.io/badge/Debian-D70A53?style=flat&logo=debian&logoColor=white)
+![Windows](https://img.shields.io/badge/Windows-0078D6?style=flat&logo=windows&logoColor=white)
