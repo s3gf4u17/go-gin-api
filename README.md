@@ -22,6 +22,6 @@ Gost does not require any external libraries. You can build it with basic comman
 
 ## Run on Debian
 
-To run gost on Debian, you need a properly built binary. You can build it yourself, or download one from **Releases** tab. When you get it done, you can use the command below:
+First build binary from source code or download prebuilt version from **Releases**.
 
     sudo cp <path to binary> /bin/
