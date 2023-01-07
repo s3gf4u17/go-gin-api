@@ -1,4 +1,4 @@
-<h2 align="center">Gost - SWS</h2>
+<h1 align="center">Gost - SWS</h1>
 
 Cross-platform static web server for web development. 
 
