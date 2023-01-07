@@ -13,6 +13,9 @@ Cross-platform static web server for web development.
 
 To build the project, you first need a golang compiler.
 
+    Debian  > sudo apt install golang
+    Windows > choco install golang
+
 Gost does not require any external libraries. You can build it with basic command:
 
     go build -x -o gost
