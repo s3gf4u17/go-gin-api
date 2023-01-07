@@ -1,1 +1,1 @@
-<p align="center">Gost</p>
+<h2 align="center">Gost</h2>
