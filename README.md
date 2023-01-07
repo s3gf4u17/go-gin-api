@@ -33,3 +33,11 @@ Now you can use Gost anywhere as a system command, with a simple command:
 ## Run on Windows
 
 todo
+
+## Release notes
+
+todo
+
+## Legal notice
+
+todo
