@@ -72,7 +72,7 @@ a{
 <div id="container">
 <h3>Hello, Gost!</h3><hr>
 This is the default gost page meaning it requires some configuration. Code is distributed open-source in <a href="https://github.com/s3gf4u17/gost">this</a> repo. To learn more about configuration check the official manual <a href="https://github.com/s3gf4u17/gost/blob/master/README.md">here</a>.<br><br>
-<b>Release notes version 0.0.1:</b>
+<b>Release notes version 0.0.0:</b>
 <ul>
 <li>serve html pages stored in <i>html</i> folder using <textarea rows="1" cols="39" readonly>gost -port=8000 -path=[path to project]</textarea> </li>
 </ul>
