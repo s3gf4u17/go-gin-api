@@ -1,5 +1,5 @@
 build:
-	@go build -x -o gost
+	@go build -x -o delve
 	@echo 'DONE'
 
 run:
@@ -7,5 +7,5 @@ run:
 	@go run main.go
 
 install: build
-	@sudo cp gost /bin/
-	@rm -rf gost
+	@sudo cp delve /bin/
+	@rm -rf delve

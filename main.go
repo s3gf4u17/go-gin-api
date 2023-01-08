@@ -33,7 +33,7 @@ var defaultHTML string = `
 <!DOCTYPE html>
 <html>
 <head>
-<title>Gost SWS</title>
+<title>Delve SWS</title>
 <style>
 body{
     background-color: #29beb0;
@@ -70,13 +70,13 @@ a{
 </head>
 <body>
 <div id="container">
-<h3>Hello, Gost!</h3><hr>
-This is the default gost page meaning it requires some configuration. Code is distributed open-source in <a href="https://github.com/s3gf4u17/gost">this</a> repo. To learn more about configuration check the official manual <a href="https://github.com/s3gf4u17/gost/blob/master/README.md">here</a>.<br><br>
+<h3>Hello, Delve!</h3><hr>
+This is the default delve page meaning it requires some configuration. Code is distributed open-source in <a href="https://github.com/s3gf4u17/delve">this</a> repo. To learn more about configuration check the official manual <a href="https://github.com/s3gf4u17/delve/blob/master/README.md">here</a>.<br><br>
 <b>Release notes version 0.0.0:</b>
 <ul>
-<li>serve html pages stored in <i>html</i> folder using <textarea rows="1" cols="39" readonly>gost -port=8000 -path=[path to project]</textarea> </li>
+<li>serve html pages stored in <i>html</i> folder using <textarea rows="1" cols="39" readonly>delve -port=8000 -path=[path to project]</textarea> </li>
 </ul>
-By using gost you agree to sharing contents of your disk via internet. Authors do not take responsibility for badly configured program.
+By using Delve you agree to sharing contents of your disk via internet. Authors do not take responsibility for badly configured program.
 </div>
 </body>
 </html>
