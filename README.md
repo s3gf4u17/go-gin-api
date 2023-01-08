@@ -1,4 +1,4 @@
-<h1 align="center">Gost - SWS</h1>
+<h1 align="center">Delve - SWS</h1>
 
 Cross-platform static web server for web development. 
 
@@ -16,9 +16,9 @@ To build the project, you first need a golang compiler.
     Debian  > sudo apt install golang
     Windows > choco install golang
 
-Gost does not require any external libraries. You can build it with basic command:
+Delve does not require any external libraries. You can build it with basic command:
 
-    go build -x -o gost
+    go build -x -o delve
 
 ## Run on Debian
 
@@ -26,9 +26,9 @@ First build binary from source code or download prebuilt version from **Releases
 
     sudo cp <path to binary> /bin/
 
-Now you can use Gost anywhere as a system command, with a simple command:
+Now you can use Delve anywhere as a system command, with a simple command:
 
-    gost -host=<host> -port=<port> -path=<path>
+    delve -host=<host> -port=<port> -path=<path>
 
 ## Run on Windows
 
@@ -41,4 +41,4 @@ todo
 
 ## Legal notice
 
-Gost is a free software. By using Gost you agree to sharing contents of your disk via internet. Authors do not take responsibility for harm caused by badly configured program.
+Delve is a free software. By using Delve you agree to sharing contents of your disk via internet. Authors do not take responsibility for harm caused by badly configured program.
