@@ -19,7 +19,6 @@ func main() {
 
 func handleRequest(w http.ResponseWriter, r *http.Request) {
     sourcePath:=strings.TrimPrefix(r.URL.Path,"/")
-    fmt.Println(*varPath+"/"+sourcePath)
     _,err:=os.Stat(*varPath+"/index.html")
     if sourcePath=="" && err==nil {
         http.ServeFile(w,r,*varPath+"/index.html")
@@ -77,10 +76,9 @@ a{
 <body>
 <div id="container">
 <h3>Hello, Delve!</h3><hr>
-This is the default delve page meaning it requires some configuration. Code is distributed open-source in <a href="https://github.com/s3gf4u17/delve">this</a> repo. To learn more about configuration check the official manual <a href="https://github.com/s3gf4u17/delve/blob/master/README.md">here</a>.<br><br>
-<b>Release notes version 0.0.0:</b>
+<b>Release notes version 1.0:</b>
 <ul>
-<li>serve html pages stored in <i>html</i> folder using <textarea rows="1" cols="39" readonly>delve -port=8000 -path=[path to project]</textarea> </li>
+<li>serve content from project directory</li>
 </ul>
 By using Delve you agree to sharing contents of your disk via internet. Authors do not take responsibility for badly configured program.
 </div>
