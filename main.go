@@ -3,6 +3,8 @@ package main
 import "net/http"
 import "flag"
 import "fmt"
+import "strings"
+import "os"
 
 var varHost = flag.String("host","127.0.0.1","")
 var varPort = flag.String("port","8000","")
@@ -11,22 +13,26 @@ var varPath = flag.String("path",".","")
 func main() {
 	flag.Parse()
 	URL:=fmt.Sprintf("%s:%s",*varHost,*varPort)
-    http.HandleFunc("/html/",serveHTML)
-	http.HandleFunc("/",serveDEFAULT)
+	http.HandleFunc("/",handleRequest)
 	http.ListenAndServe(URL,nil)
 }
 
-func serveHTML(w http.ResponseWriter, r *http.Request) {
-    filepath := r.URL.Path
-    if filepath=="/html/" {
-        http.ServeFile(w,r,*varPath+"/html/index.html")
-        return
+func handleRequest(w http.ResponseWriter, r *http.Request) {
+    sourcePath:=strings.TrimPrefix(r.URL.Path,"/")
+    fmt.Println(*varPath+"/"+sourcePath)
+    _,err:=os.Stat(*varPath+"/index.html")
+    if sourcePath=="" && err==nil {
+        http.ServeFile(w,r,*varPath+"/index.html")
+    } else if sourcePath=="" {
+        w.Write([]byte(defaultHTML))
+    } else {
+        fileInfo,err:=os.Stat(*varPath+"/"+sourcePath)
+        if err!= nil || fileInfo.IsDir() {
+            w.Write([]byte("404 page not found"))
+        } else {
+            http.ServeFile(w,r,*varPath+"/"+sourcePath)
+        }
     }
-    http.ServeFile(w,r,*varPath+filepath)
-}
-
-func serveDEFAULT(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte(defaultHTML))
 }
 
 var defaultHTML string = `
